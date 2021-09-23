@@ -177,6 +177,7 @@
                       -InformationAction Continue" />
     <ItemGroup>
         <SdkMsiWixSrcFiles Include="$(WixRoot)\dotnet.wixobj" />
+        <SdkMsiWixSrcFiles Include="$(WixRoot)\dotnethome.wixobj" />
         <SdkMsiWixSrcFiles Include="$(WixRoot)\provider.wixobj" />
         <SdkMsiWixSrcFiles Include="$(WixRoot)\registrykeys.wixobj" />
         <SdkMsiWixSrcFiles Include="$(WixRoot)\install-files.wixobj" />
@@ -247,6 +248,7 @@
                       '$(Architecture)' ^
                       -InformationAction Continue" />
     <ItemGroup>
+        <TemplatesMsiWixSrcFiles Include="$(WixRoot)\dotnethome.wixobj" />
         <TemplatesMsiWixSrcFiles Include="$(WixRoot)\provider.wixobj" />
         <TemplatesMsiWixSrcFiles Include="$(WixRoot)\templates.wixobj" />
         <TemplatesMsiWixSrcFiles Include="$(WixRoot)\template-install-files.wixobj" />
@@ -303,6 +305,7 @@
                       '$(Architecture)' ^
                       -InformationAction Continue" />
     <ItemGroup>
+      <ManifestsMsiWixSrcFiles Include="$(WixRoot)\dotnethome.wixobj" />
       <ManifestsMsiWixSrcFiles Include="$(WixRoot)\provider.wixobj" />
       <ManifestsMsiWixSrcFiles Include="$(WixRoot)\Manifests.wixobj" />
       <ManifestsMsiWixSrcFiles Include="$(WixRoot)\Manifest-install-files.wixobj" />

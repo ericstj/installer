@@ -26,15 +26,4 @@
     <WixVariable Id="WixUILicenseRtf" Value="$(var.MicrosoftEula)" />
 
   </Product>
-  <Fragment>
-    <Directory Id="TARGETDIR" Name="SourceDir">
-      <Directory Id="$(var.Program_Files)">
-        <Directory Id="DOTNETHOME" Name="dotnet"/>
-      </Directory>
-    </Directory>
-    
-    <?if $(var.Platform)~=x64?>
-    <CustomActionRef Id="Set_DOTNETHOME_NON_NATIVE_ARCHITECTURE" />
-    <?endif?>
-  </Fragment>
 </Wix>
